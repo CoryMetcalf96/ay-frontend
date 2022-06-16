@@ -1,0 +1,5 @@
+.card-grid {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(229, 218, 204)
+}
