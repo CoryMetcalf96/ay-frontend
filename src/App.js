@@ -77,13 +77,15 @@ function App() {
       <Route
         path="/show/:id"
         render={(rp) => (
-          <Show people={people} deletePeople={deletePeople} {...rp} />
+          <Show people={people} 
+          deletePeople={deletePeople} {...rp} />
         )}
       />
       <Route
         path="/edit/:id"
         render={(rp) => (
-          <Edit people={people} updatePeople={updatePeople} {...rp} />
+          <Edit people={people} 
+          updatePeople={updatePeople} {...rp} />
         )}
       />
 
