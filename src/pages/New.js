@@ -57,13 +57,117 @@ function New(props) {
           onChange={handleChange}
         />
         <br />
-        {/* <input
+        <input
           type="text"
-          value={newForm.gaming}
-          name="gaming"
-          placeholder='Steam Profile'
+          value={newForm.linkedin}
+          name="LinkedIn"
+          placeholder='LinkedIn'
           onChange={handleChange}
-        /> */}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.github}
+          name="GitHub"
+          placeholder='GitHub'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.portfolio}
+          name="Portfolio"
+          placeholder="Portfolio"
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.location}
+          name="Location"
+          placeholder='Location'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.instagram}
+          name="Instagram"
+          placeholder='Instagram'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.quote}
+          name="Quote"
+          placeholder='Quote'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.nation}
+          name="Nation"
+          placeholder='Nation'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.steam}
+          name="Steam"
+          placeholder='Steam'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.xbox}
+          name="Xbox"
+          placeholder='Xbox'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.sonypsn}
+          name="SonyPSN"
+          placeholder='SonyPSN'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.nintendo}
+          name="Nintendo"
+          placeholder='Nintendo'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.favbook}
+          name="Favorite Book"
+          placeholder='Favorite Book'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.favmovie}
+          name="Favorite Movie"
+          placeholder='Favorite Movie'
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={newForm.favgame}
+          name="Favorite Game"
+          placeholder='Favorite Game'
+          onChange={handleChange}
+        />
         <br />
         <input type="submit" value='Create Profile' />
       </form>
