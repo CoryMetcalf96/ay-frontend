@@ -1,8 +1,10 @@
+
 /////// Import Components ///////
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
+import { useEffect, useState } from 'react';
 import { Route, Switch } from "react-router-dom";
 
 /////// Import Component Styling ///////
@@ -19,6 +21,29 @@ import Show from "./pages/Show";
 import New from "./pages/New";
 
 function App() {
+
+const [ people, setPeople ] = useState(null);
+const URL = "https://avatar-yearbook-backend.herokuapp.com/july22/";
+
+const  getPeople = async () => {
+  const response = await fetch(URL);
+  const data = await response.json();
+  setPeople(data);
+};
+
+const createPeople = async (person) => {
+  await fetch(URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "Application/json",
+    },
+    body: JSON.stringify(person),
+  });
+  getPeople()
+}
+// useEffect(() => getPeople(), []);
+useEffect(() => {  getPeople()
+}, [])
   return (
     <div className="App">
       <Header />
@@ -28,7 +53,7 @@ function App() {
         <Landing />
       </Route>
       <Route path="/mainindex">
-        <MainIndex />
+        <MainIndex people={people} createPeople={createPeople} />
       </Route>
       <Route path="/show">
         <Show />
