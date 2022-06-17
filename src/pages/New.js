@@ -60,7 +60,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.linkedin}
-          name="LinkedIn"
+          name="linkedin"
           placeholder='LinkedIn'
           onChange={handleChange}
         />
@@ -68,7 +68,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.github}
-          name="GitHub"
+          name="github"
           placeholder='GitHub'
           onChange={handleChange}
         />
@@ -76,7 +76,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.portfolio}
-          name="Portfolio"
+          name="portfolio"
           placeholder="Portfolio"
           onChange={handleChange}
         />
@@ -84,7 +84,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.location}
-          name="Location"
+          name="location"
           placeholder='Location'
           onChange={handleChange}
         />
@@ -92,7 +92,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.instagram}
-          name="Instagram"
+          name="instagram"
           placeholder='Instagram'
           onChange={handleChange}
         />
@@ -100,7 +100,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.quote}
-          name="Quote"
+          name="quote"
           placeholder='Quote'
           onChange={handleChange}
         />
@@ -108,7 +108,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.nation}
-          name="Nation"
+          name="nation"
           placeholder='Nation'
           onChange={handleChange}
         />
@@ -116,7 +116,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.steam}
-          name="Steam"
+          name="steam"
           placeholder='Steam'
           onChange={handleChange}
         />
@@ -124,7 +124,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.xbox}
-          name="Xbox"
+          name="xbox"
           placeholder='Xbox'
           onChange={handleChange}
         />
@@ -132,7 +132,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.sonypsn}
-          name="SonyPSN"
+          name="sonypsn"
           placeholder='SonyPSN'
           onChange={handleChange}
         />
@@ -140,7 +140,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.nintendo}
-          name="Nintendo"
+          name="nintendo"
           placeholder='Nintendo'
           onChange={handleChange}
         />
@@ -148,7 +148,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.favbook}
-          name="Favorite Book"
+          name="favbook"
           placeholder='Favorite Book'
           onChange={handleChange}
         />
@@ -156,7 +156,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.favmovie}
-          name="Favorite Movie"
+          name="favmovie"
           placeholder='Favorite Movie'
           onChange={handleChange}
         />
@@ -164,7 +164,7 @@ function New(props) {
         <input
           type="text"
           value={newForm.favgame}
-          name="Favorite Game"
+          name="favgame"
           placeholder='Favorite Game'
           onChange={handleChange}
         />

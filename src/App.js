@@ -110,13 +110,10 @@ export default App;
 //   instagram: String,
 //   quote: String,
 //   nation: String,
-//   gaming: {
-//       steam: String,
-//       xbox: String,
-//       sonypsn: String,
-//       nintendo: String},
-//   favorites: {
-//       favbook: String,
-//       favmovie: String,
-//       favgame: String}
-// });
+//   steam: String,
+//   xbox: String,
+//   sonypsn: String,
+//   nintendo: String},
+//   favbook: String,
+//   favmovie: String,
+//   favgame: String
