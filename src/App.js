@@ -23,7 +23,7 @@ import New from "./pages/New";
 function App() {
 
 const [ people, setPeople ] = useState(null);
-const URL = "https://avatar-yearbook-backend.herokuapp.com/july22/";
+const URL = "https://avatar-yearbook-backend.herokuapp.com/";
 
 const  getPeople = async () => {
   const response = await fetch(URL);
@@ -59,7 +59,7 @@ useEffect(() => {  getPeople()
         <Show />
       </Route>
       <Route path="/new">
-        <New />
+        <New people={people} createPeople={createPeople}/>
       </Route>
 
       <Footer />
@@ -68,3 +68,24 @@ useEffect(() => {  getPeople()
 }
 
 export default App;
+
+// const personSchema = new mongoose.Schema({
+//   name: String,
+//   picture: String,
+//   linkedin: String,
+//   github: String,
+//   portfolio: String,
+//   location: String,
+//   instagram: String,
+//   quote: String,
+//   nation: String,
+//   gaming: {
+//       steam: String,
+//       xbox: String,
+//       sonypsn: String,
+//       nintendo: String},
+//   favorites: {
+//       favbook: String,
+//       favmovie: String,
+//       favgame: String}
+// });
