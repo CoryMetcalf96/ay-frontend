@@ -1,10 +1,9 @@
-
 /////// Import Components ///////
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
 /////// Import Component Styling ///////
@@ -19,50 +18,51 @@ import Landing from "./pages/Landing";
 import MainIndex from "./pages/MainIndex";
 import Show from "./pages/Show";
 import New from "./pages/New";
+import Edit from "./pages/Edit";
 
 function App() {
+  const [people, setPeople] = useState(null);
+  const URL = "https://avatar-yearbook-backend.herokuapp.com/";
 
-const [ people, setPeople ] = useState(null);
-const URL = "https://avatar-yearbook-backend.herokuapp.com/";
+  const getPeople = async () => {
+    const response = await fetch(URL);
+    const data = await response.json();
+    setPeople(data);
+  };
 
-const  getPeople = async () => {
-  const response = await fetch(URL);
-  const data = await response.json();
-  setPeople(data);
-};
+  const createPeople = async (person) => {
+    await fetch(URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/json",
+      },
+      body: JSON.stringify(person),
+    });
+    getPeople();
+  };
 
-const createPeople = async (person) => {
-  await fetch(URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "Application/json",
-    },
-    body: JSON.stringify(person),
-  });
-  getPeople()
-};
+  const updatePeople = async (person, id) => {
+    await fetch(URL + id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "Application/json",
+      },
+      body: JSON.stringify(person),
+    });
+    getPeople();
+  };
 
-const updatePeople = async (person, id) => {
-  await fetch(URL + id, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "Application/json",
-    },
-    body:JSON.stringify(person),
-  });
-  getPeople();
-};
+  const deletePeople = async (id) => {
+    await fetch(URL + id, {
+      method: "DELETE",
+    });
+    getPeople();
+  };
 
-const deletePeople = async id => {
-  await fetch(URL + id, {
-    method: "DELETE",
-  });
-  getPeople();
-}
-
-// useEffect(() => getPeople(), []);
-useEffect(() => {  getPeople()
-}, [])
+  // useEffect(() => getPeople(), []);
+  useEffect(() => {
+    getPeople();
+  }, []);
   return (
     <div className="App">
       <Header />
@@ -74,18 +74,21 @@ useEffect(() => {  getPeople()
       <Route path="/mainindex">
         <MainIndex people={people} createPeople={createPeople} />
       </Route>
-      <Route path="/show/:id" 
-      render={rp => (
-        <Show
-        people={people}
-        updatePeople={updatePeople}
-        deletePeople={deletePeople}
-        {...rp}
-        />
-      )}
+      <Route
+        path="/show/:id"
+        render={(rp) => (
+          <Show people={people} deletePeople={deletePeople} {...rp} />
+        )}
       />
+      <Route
+        path="/edit/:id"
+        render={(rp) => (
+          <Edit people={people} updatePeople={updatePeople} {...rp} />
+        )}
+      />
+
       <Route path="/new">
-        <New people={people} createPeople={createPeople}/>
+        <New people={people} createPeople={createPeople} />
       </Route>
 
       <Footer />
