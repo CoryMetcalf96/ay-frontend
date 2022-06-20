@@ -25,7 +25,10 @@ function App() {
 
   const [ user, setUser ] = useState(null); 
   useEffect(() => {
-    auth.onAuthStateChanged(user => setUser(user))
+    const unsubscribe = auth.onAuthStateChanged(user => setUser(user));
+    return () => {
+      unsubscribe();
+    };
   }, []);
 
   const [people, setPeople] = useState(null);
@@ -38,6 +41,7 @@ function App() {
   };
 
   const createPeople = async (person) => {
+    if(!user) return;
     await fetch(URL, {
       method: "POST",
       headers: {
@@ -49,6 +53,7 @@ function App() {
   };
 
   const updatePeople = async (person, id) => {
+    if(user) return;
     await fetch(URL + id, {
       method: "PUT",
       headers: {
@@ -60,6 +65,7 @@ function App() {
   };
 
   const deletePeople = async (id) => {
+    if(!user) return;
     await fetch(URL + id, {
       method: "DELETE",
     });
@@ -79,25 +85,25 @@ function App() {
         <Landing />
       </Route>
       <Route path="/mainindex">
-        <MainIndex people={people} createPeople={createPeople} />
+        <MainIndex user={user} people={people} createPeople={createPeople} />
       </Route>
       <Route
         path="/show/:id"
         render={(rp) => (
-          <Show people={people} 
+          <Show user={user} people={people} 
           deletePeople={deletePeople} {...rp} />
         )}
       />
       <Route
         path="/edit/:id"
         render={(rp) => (
-          <Edit people={people} 
+          <Edit user={user} people={people} 
           updatePeople={updatePeople} {...rp} />
         )}
       />
 
       <Route path="/new">
-        <New people={people} createPeople={createPeople} />
+        <New user={user} people={people} createPeople={createPeople} />
       </Route>
 
       <Footer />
