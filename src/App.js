@@ -1,10 +1,9 @@
 /////// Import Components ///////
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
-import Card from "./components/Card";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 /////// Import Component Styling ///////
 import "./style/app.css";

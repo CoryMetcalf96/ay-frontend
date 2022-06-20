@@ -1,7 +1,18 @@
-.card {
-    border: solid;
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.card-picture {
+.card {
+    text-align: center;
+    border: solid;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 400px
+}
+
+.pfp {
     width: 200px;
 }
