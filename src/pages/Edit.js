@@ -153,7 +153,6 @@ function Edit(props) {
         <br />
         <input type="submit" value="Update Profile" />
       </form>
-
     </div>
   )
 }
