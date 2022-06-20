@@ -20,30 +20,33 @@ const id = props.match.params.id;
 
   return (
     <div className="person">
-<form onSubmit={handleSubmit}>
-  <input 
-  type="text"
-  value={editForm.name}
-  name="name"
-  placeholder="name"
-  onChange={handleChange} 
-  />
-  <input 
-  type="text"
-  value={editForm.picture}
-  name="picture"
-  placeholder="picture"
-  onChange={handleChange} 
-  />
-  <input 
-  type="text"
-  value={editForm.quote}
-  name="quote"
-  placeholder="quote"
-  onChange={handleChange} 
-  />
-<input type="submit" value="Update Profile" />
-</form>
+      {props.user && 
+      <form onSubmit={handleSubmit}>
+      <input 
+      type="text"
+      value={editForm.name}
+      name="name"
+      placeholder="name"
+      onChange={handleChange} 
+      />
+      <input 
+      type="text"
+      value={editForm.picture}
+      name="picture"
+      placeholder="picture"
+      onChange={handleChange} 
+      />
+      <input 
+      type="text"
+      value={editForm.quote}
+      name="quote"
+      placeholder="quote"
+      onChange={handleChange} 
+      />
+    <input type="submit" value="Update Profile" />
+    </form>
+      }
+
 
     </div>
   )
