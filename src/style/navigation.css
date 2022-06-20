@@ -3,3 +3,13 @@
     justify-content: space-around;
     background-color: rgb(208, 190, 162);
   }
+
+
+  .log {
+    list-style: none;
+    display: flex;
+  }
+  .logbtn {
+    margin-right: .5rem;
+    cursor: pointer;
+  }

@@ -1,4 +1,5 @@
 /////// Import Components ///////
+import { auth } from './services/firebase';
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Card from "./components/Card";
@@ -21,6 +22,12 @@ import New from "./pages/New";
 import Edit from "./pages/Edit";
 
 function App() {
+
+  const [ user, setUser ] = useState(null); 
+  useEffect(() => {
+    auth.onAuthStateChanged(user => setUser(user))
+  }, []);
+
   const [people, setPeople] = useState(null);
   const URL = "https://avatar-yearbook-backend.herokuapp.com/";
 
@@ -66,7 +73,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Navigation />
+      <Navigation user={user}/>
       {/* filler for now */}
       <Route exact path="/">
         <Landing />
