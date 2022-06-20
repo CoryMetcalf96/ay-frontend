@@ -35,6 +35,3 @@ function MainIndex(props) {
 }
 
 export default MainIndex;
-
-// Backburner:
-// Find a way in to the nested array from database information OR change the schema.
