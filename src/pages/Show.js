@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Show(props) {
@@ -14,104 +13,105 @@ function Show(props) {
 
   return (
     <div className="person">
-      <h1> {person.name} </h1>
+      <div className="name-and-photo">
+        <h1 className="show-name"> {person.name} </h1>
 
-      {
-        person.picture
-          ? <img src={person.picture} alt={person.name} />
-          : <img src={anonymousPicture} alt="Anonymous Photo" />
-      }
+        {
+          person.picture
+            ? <img className="show-picture" src={person.picture} alt={person.name} />
+            : <img className="show-picture" src={anonymousPicture} alt="Anonymous Photo" />
 
-      {
-        person.linkedin
-          ? <a href={person.linkedin}>LinkedIn</a>
-          : null
-      }
+        }
+        <br /> <br />
+        {
+          person.linkedin
+            ? <a href={person.linkedin} ><img className="show-linkedin" src="https://bankimooncentre.org/wp-content/uploads/2020/05/LinkedIn-Icon-Square.png" href={person.linkedin} alt="LinkedIn" /></a>
+            : null
+        }
+        {
+          person.github
+            ? <a href={person.github}><img className="show-github" src="https://www.pngitem.com/pimgs/m/128-1280162_github-logo-png-cat-transparent-png.png" alt="GitHub" /></a>
+            : null
+        }
 
-      {
-        person.github
-          ? <a href={person.github}>GitHub</a>
-          : null
-      }
+        {
+          person.instagram
+            ? <a href={person.instagram}><img className="show-instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" /></a>
+            : null
+        }
+      </div>
+      <div className="personal-information">
 
-      {
-        person.portfolio
-          ? <a href={person.portfolio}>Portfolio</a>
-          : null
-      }
+        {
+          person.portfolio
+            ? <a className="show-portfolio" href={person.portfolio}>Portfolio</a>
+            : null
+        }
 
-      {
-        person.instagram
-          ? <a href={person.instagram}>Instagram</a>
-          : null
-      }
+        {
+          person.location
+            ? <h3><strong>Location: </strong>{person.location}</h3>
+            : null
+        }
 
-      {
-        person.location
-          ? <h3>{person.location}</h3>
-          : null
-      }
+        {
+          person.quote
+            ? <h3>Class Quote: {person.quote}</h3>
+            : null
+        }
 
-      {
-        person.quote
-          ? <h3>{person.quote}</h3>
-          : null
-      }
+        {
+          person.nation
+            ? <h3>Nation: {person.nation}</h3>
+            : null
+        }
 
-      {
-        person.nation
-          ? <h3>{person.nation}</h3>
-          : null
-      }
+        {
+          person.steam
+            ? <h3>Steam: {person.steam}</h3>
+            : null
+        }
 
-      {
-        person.steam
-          ? <h3>{person.steam}</h3>
-          : null
-      }
+        {
+          person.xbox
+            ? <h3>Xbox: {person.xbox}</h3>
+            : null
+        }
 
-      {
-        person.xbox
-          ? <h3>{person.xbox}</h3>
-          : null
-      }
+        {
+          person.sonypsn
+            ? <h3>PSN: {person.sonypsn}</h3>
+            : null
+        }
 
-      {
-        person.sonypsn
-          ? <h3>{person.sonypsn}</h3>
-          : null
-      }
+        {
+          person.nintendo
+            ? <h3>Nintendo: {person.nintendo}</h3>
+            : null
+        }
 
-      {
-        person.nintendo
-          ? <h3>{person.nintendo}</h3>
-          : null
-      }
+        {
+          person.favbook
+            ? <h3>Favorite Book: '{person.favbook}'</h3>
+            : null
+        }
 
-      {
-        person.favbook
-          ? <h3>{person.favbook}</h3>
-          : null
-      }
+        {
+          person.favmovie
+            ? <h3>Favorite Movie: '{person.favmovie}'</h3>
+            : null
+        }
 
-      {
-        person.favmovie
-          ? <h3>{person.favmovie}</h3>
-          : null
-      }
-
-      {
-        person.favgame
-          ? <h3>{person.favgame}</h3>
-          : null
-      }
-
-
-
-      <Link to={`/edit/${person._id}`}>Edit</Link>
-      <button className="delete-btn" onClick={removePerson}>
-        Delete Person
-      </button>
+        {
+          person.favgame
+            ? <h3>Favorite Game: '{person.favgame}'</h3>
+            : null
+        }
+        <Link to={`/edit/${person._id}`}>Edit</Link>
+        <button className="delete-btn" onClick={removePerson}>
+          Delete Person
+        </button>
+      </div>
     </div>
   );
 }

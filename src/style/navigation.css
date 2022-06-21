@@ -43,3 +43,8 @@
   margin-right: .5rem;
   cursor: pointer;
 }
+
+.welcome-li {
+  display: flex;
+  align-items: center;
+}
