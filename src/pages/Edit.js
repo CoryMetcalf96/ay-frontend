@@ -22,6 +22,7 @@ function Edit(props) {
 
   return (
     <div className="person">
+      {props.user &&
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -153,6 +154,7 @@ function Edit(props) {
         <br />
         <input type="submit" value="Update Profile" />
       </form>
+      }
     </div>
   )
 }
