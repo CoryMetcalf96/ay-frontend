@@ -44,3 +44,9 @@
   cursor: pointer;
 }
 
+
+.welcome-li {
+  display: flex;
+  align-items: center;
+}
+

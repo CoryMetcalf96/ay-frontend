@@ -1,0 +1,71 @@
+/* Color Variables */
+:root {
+    --orange: #dc8c24;
+    --yellow: #fcdc7b;
+    --brown-red: #5c3026;
+    --light-blue: #7094b7;
+    --light-grey: #c6b3b0;
+    --black: #3c3c44;
+
+    --fs-xl: 2.5rem;
+    --fs-l: 1.5rem;
+    --fs-m: 1.25rem;
+    --fs-s: 1rem;
+    --fs-xs: .75rem;
+
+    box-sizing: border-box;
+}
+
+.person {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.name-and-photo {
+    border-radius: 20px 0px 0px 20px;
+    border: solid;
+    border-right: none;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-color: var(--orange);
+    text-align: center;
+    padding: 10px 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.personal-information {
+    border-radius: 0px 20px 20px 0px;
+    border: solid;
+    border-left: none;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-color: var(--orange);
+    padding: 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    max-width: 400px;
+}
+
+.show-name {
+    font-size: var(--fs-xl);
+}
+
+.show-picture {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.show-linkedin, .show-github, .show-instagram {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.show-portfolio {
+    font-size: var(--fs-xl);
+    text-align: center;
+    color: black;
+}
