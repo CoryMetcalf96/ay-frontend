@@ -17,7 +17,7 @@ function Navigation(props) {
       <ul className="log">
         {props.user ? (
           <>
-            <li>
+            <li className="welcome-li">
               Welcome, {props.user.displayName}
               <img
                 style={photoStyles}
