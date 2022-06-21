@@ -20,6 +20,7 @@ function New(props) {
   // Establish route redirect after form submission
   const redirect = () => {
     history.goBack();
+
   };
 
   // Hande the submit for the form
@@ -177,6 +178,3 @@ function New(props) {
 }
 
 export default New;
-
-// Backburner:
-// Back to main index specifically in redirect route

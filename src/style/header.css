@@ -1,6 +1,33 @@
+/* Color Variables */
+:root {
+    --orange: #dc8c24;
+    --yellow: #fcdc7b;
+    --brown-red: #5c3026;
+    --light-blue: #7094b7;
+    --light-grey: #c6b3b0;
+    --black: #3c3c44;
+
+    --fs-xl: 2.5rem;
+    --fs-l: 1.5rem;
+    --fs-m: 1.25rem;
+    --fs-s: 1rem;
+    --fs-xs: .75rem;
+
+    box-sizing: border-box;
+}
+
+
 .header {
     text-align: center;
-    margin: 0 auto;
     justify-content: center;
-    background-color: antiquewhite;
+    color: var(--black);
+    margin: 10px;
+}
+
+.avatar-yearbook {
+    font-size: var(--fs-xl);
+}
+
+.stay-connected {
+    font-size: var(--fs-l);
 }
