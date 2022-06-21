@@ -14,6 +14,8 @@ import "./style/header.css";
 import "./style/navigation.css";
 import "./style/show.css";
 import "./style/edit.css"
+import "./style/landing.css";
+
 
 //Import Pages
 import Landing from "./pages/Landing";
