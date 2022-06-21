@@ -1,7 +1,27 @@
+/* Color Variables */
+:root {
+    --orange: #dc8c24;
+    --yellow: #fcdc7b;
+    --brown-red: #5c3026;
+    --light-blue: #7094b7;
+    --light-grey: #c6b3b0;
+    --black: #3c3c44;
+
+    --fs-xl: 2.5rem;
+    --fs-l: 1.5rem;
+    --fs-m: 1.25rem;
+    --fs-s: 1rem;
+    --fs-xs: .75rem;
+
+    box-sizing: border-box;
+}
+
 .cards {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .card {
@@ -10,7 +30,13 @@
     padding: 10px;
     margin: 10px;
     width: 300px;
-    height: 400px
+    height: 400px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    border-color: var(--brown-red);
+    background-color: var(--orange);
 }
 
 .pfp {
