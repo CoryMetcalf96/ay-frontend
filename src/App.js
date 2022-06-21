@@ -52,7 +52,7 @@ function App() {
   };
 
   const updatePeople = async (person, id) => {
-    if(user) return;
+    if(!user) return;
     await fetch(URL + id, {
       method: "PUT",
       headers: {
