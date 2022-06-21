@@ -13,7 +13,9 @@ import "./style/footer.css";
 import "./style/header.css";
 import "./style/navigation.css";
 import "./style/show.css";
+import "./style/edit.css"
 import "./style/landing.css";
+
 
 //Import Pages
 import Landing from "./pages/Landing";
@@ -43,9 +45,11 @@ function App() {
 
   const createPeople = async (person) => {
     if(!user) return;
+    const token = await user.getIdToken()
     await fetch(URL, {
       method: "POST",
       headers: {
+        'Authorization': 'Bearer ' + token,
         "Content-Type": "Application/json",
       },
       body: JSON.stringify(person),
@@ -55,9 +59,11 @@ function App() {
 
   const updatePeople = async (person, id) => {
     if(!user) return;
+    const token = await user.getIdToken()
     await fetch(URL + id, {
       method: "PUT",
       headers: {
+        'Authorization': 'Bearer ' + token,
         "Content-Type": "Application/json",
       },
       body: JSON.stringify(person),
@@ -67,8 +73,14 @@ function App() {
 
   const deletePeople = async (id) => {
     if(!user) return;
+    //new line
+    const token = await user.getIdToken()
     await fetch(URL + id, {
       method: "DELETE",
+      headers: {
+        'Authorization': 'Bearer ' + token,
+        "Content-Type": "Application/json",
+      }
     });
     getPeople();
   };

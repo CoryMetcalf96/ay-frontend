@@ -62,10 +62,10 @@ function Show(props) {
 
         {
           person.nation
-            ? <h3>Nation: {person.nation}</h3>
+            ? <h3>Avatar Nation: {person.nation}</h3>
             : null
         }
-
+        <h2>Gaming Links:</h2>
         {
           person.steam
             ? <h3>Steam: {person.steam}</h3>
@@ -89,7 +89,7 @@ function Show(props) {
             ? <h3>Nintendo: {person.nintendo}</h3>
             : null
         }
-
+        <h2>Favorites:</h2>
         {
           person.favbook
             ? <h3>Favorite Book: '{person.favbook}'</h3>
@@ -107,9 +107,10 @@ function Show(props) {
             ? <h3>Favorite Game: '{person.favgame}'</h3>
             : null
         }
-        <Link to={`/edit/${person._id}`}>Edit</Link>
-        <button className="delete-btn" onClick={removePerson}>
-          Delete Person
+        <Link to={`/edit/${person._id}`}><button className="show-edit">Edit Profile</button></Link>
+        <br />
+        <button className="show-delete" onClick={removePerson}>
+          Delete Profile
         </button>
       </div>
     </div>
@@ -117,5 +118,3 @@ function Show(props) {
 }
 
 export default Show;
-
-// avatart icon link: https://cdn.vox-cdn.com/thumbor/8eRpMBfVFeMnzzTz95UZQnnqqtE=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/20103707/Screen_Shot_2020_07_21_at_9.38.25_AM.png
