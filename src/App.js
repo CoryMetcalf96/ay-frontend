@@ -13,6 +13,7 @@ import "./style/footer.css";
 import "./style/header.css";
 import "./style/navigation.css";
 import "./style/show.css";
+import "./style/edit.css"
 
 //Import Pages
 import Landing from "./pages/Landing";

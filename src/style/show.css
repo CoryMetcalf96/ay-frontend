@@ -69,3 +69,23 @@
     text-align: center;
     color: black;
 }
+
+.show-edit {
+    background-color: var(--brown-red);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.show-delete {
+    justify-content: center;
+    background-color: var(--brown-red);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    padding: 8px;
+}
