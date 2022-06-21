@@ -12,14 +12,14 @@ function MainIndex(props) {
               <Link to={`/show/${person._id}`}>
                 {
                   person.picture
-                    ? <img className="pfp" src={person.picture} alt={person.name} />
-                    : <img className="pfp" src={anonymousPicture} alt="Anonymous Photo" />
+                    ? <img className="mainindex-pfp" src={person.picture} alt={person.name} />
+                    : <img className="mainindex-pfp" src={anonymousPicture} alt="Anonymous Photo" />
                 }
-                <h1 className="card-name">{person.name}</h1>
+                <h2 className="mainindex-name">{person.name}</h2>
               </Link>
               {
                 person.quote
-                  ? <h3>{person.quote}</h3>
+                  ? <h3 className="mainindex-quote">"{person.quote}"</h3>
                   : null
               }
             </div>

@@ -89,3 +89,28 @@
     font-size: var(--fs-m);
     padding: 8px;
 }
+
+@media only screen and (max-width: 850px) {
+    .person {
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .name-and-photo {
+        border-radius: 20px 20px 0px 0px;
+        border-color: var(--brown-red);
+        border-right: solid;
+        border-bottom: none;
+        border-width: 5px;
+    }
+    
+    .personal-information {
+        border-radius: 0px 0px 20px 20px;
+        border: solid;
+        border-color: var(--brown-red);
+        border-top: none;
+        border-width: 5px;
+        max-width: 850px;
+    }
+  }

@@ -30,7 +30,7 @@ function Navigation(props) {
           </>
         ) : (
           <li className="logbtn" onClick={login}>
-            Login
+            LOG IN
           </li>
         )}
       </ul>

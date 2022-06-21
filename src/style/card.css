@@ -1,6 +1,6 @@
 /* Color Variables */
 :root {
-    --orange: #dc8c24;
+    --orange: #eccca3;
     --yellow: #fcdc7b;
     --brown-red: #5c3026;
     --light-blue: #7094b7;
@@ -21,24 +21,44 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin-top: 15px;
 }
 
 .card {
     text-align: center;
     border: solid;
     padding: 10px;
-    margin: 10px;
-    width: 300px;
-    height: 400px;
+    margin-top: 100px;
+    width: 285px;
+    min-height: 300px;
+    max-height: 400px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
     color: white;
     border: solid;
     border-radius: 10px;
     border-color: var(--brown-red);
+    border-width: 3px;
     background-color: var(--orange);
 }
 
-.pfp {
-    width: 200px;
+.card > a {
+    color: var(--brown-red);
+}
+
+.mainindex-pfp {
+    margin-top: -80px;
+    width: 230px;
+    border-radius: 115px;
+    border: solid;
+    border-color: var(--brown-red);
+    border-width: 4px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.mainindex-name {
+    font-size: 1.75rem;
+}
+
+.mainindex-quote {
+    font-size: var(--fs-s);
 }

@@ -49,3 +49,21 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .navigation {
+    align-items: center;
+    font-size: var(--fs-m);
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation > a:visited, .navigation > a:link, .navigation > a:hover, .navigation > a:active {
+    padding: 5px;
+  }
+}
