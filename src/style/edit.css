@@ -14,6 +14,7 @@
     --fs-xs: .75rem;
 
     box-sizing: border-box;
+    background-image: url("/src/images/defaultBG.png");
 }
 
 .edit-page {
