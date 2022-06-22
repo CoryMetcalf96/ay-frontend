@@ -25,7 +25,102 @@
     margin-bottom: 15px;
 }
 
-.card {
+.air-card {
+    text-align: center;
+    border: solid;
+    padding: 10px;
+    margin-top: 100px;
+    width: 285px;
+    min-height: 300px;
+    max-height: 400px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: rgb(255, 255, 255);
+    border: solid;
+    border-radius: 10px;
+    border-color: var(--brown-red);
+    border-width: 3px;
+    background-color: var(--orange);
+    background-image: url('../images/airBGdark.png');
+}
+
+.air-card > a {
+    color: rgb(255, 255, 255);
+    font-family: "Herculanum";
+    text-decoration: none;
+}
+
+.earth-card {
+    text-align: center;
+    border: solid;
+    padding: 10px;
+    margin-top: 100px;
+    width: 285px;
+    min-height: 300px;
+    max-height: 400px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    border-color: rgb(10, 45, 10);
+    border-width: 3px;
+    background-color: var(--orange);
+    background-image: url('../images/earthBG.png');
+}
+
+.earth-card > a {
+    color: rgb(255, 255, 255);
+    font-family: "Herculanum";
+    text-decoration: none;
+}
+
+.mainindex-earth-pfp {
+    margin-top: -80px;
+    width: 230px;
+    height: 230px;
+    border-radius: 115px;
+    border: solid;
+    border-color: rgb(10, 45, 10);
+    border-width: 4px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+}
+
+
+.water-card {
+    text-align: center;
+    border: solid;
+    padding: 10px;
+    margin-top: 100px;
+    width: 285px;
+    min-height: 300px;
+    max-height: 400px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: rgb(255, 255, 255);
+    border: solid;
+    border-radius: 10px;
+    border-color: rgb(27, 53, 65);
+    border-width: 3px;
+    background-color: var(--orange);
+    background-image: url('../images/waterBGdark.png');
+}
+
+.water-card > a {
+    color: rgb(255, 255, 255);
+    font-family: "Herculanum";
+    text-decoration: none;
+}
+
+.mainindex-water-pfp {
+    margin-top: -80px;
+    width: 230px;
+    height: 230px;
+    border-radius: 115px;
+    border: solid;
+    border-color: rgb(27, 53, 65);
+    border-width: 4px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.fire-card {
     text-align: center;
     border: solid;
     padding: 10px;
@@ -40,12 +135,40 @@
     border-color: var(--brown-red);
     border-width: 3px;
     background-color: var(--orange);
+    background-image: url('../images/fireBG.png');
 }
 
-.card > a {
-    color: var(--brown-red);
+.fire-card > a {
+    color: rgb(255, 255, 255);
     font-family: "Herculanum";
+    text-decoration: none;
 }
+
+.instructor-card {
+    text-align: center;
+    border: solid;
+    padding: 10px;
+    margin-top: 100px;
+    width: 285px;
+    min-height: 300px;
+    max-height: 400px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    border-color: var(--brown-red);
+    border-width: 3px;
+    background-color: var(--orange);
+    background-image: url('../images/landing.png');
+    background-size: contain;
+}
+
+.instructor-card > a {
+    color: rgb(255, 255, 255);
+    font-family: "Herculanum";
+    text-decoration: none;
+}
+
 
 .mainindex-pfp {
     margin-top: -80px;
