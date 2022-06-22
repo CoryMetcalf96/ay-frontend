@@ -39,7 +39,7 @@ function New(props) {
     <div className="edit-page">
       {/* <h1>This is where we add a new person</h1>
       <h3>create form lives here</h3> */}
-      {!props.user && <p>please log in to access this function</p>}
+      {!props.user && <p className="error-message">Please log in to access this function.</p>}
       {props.user && (
         <div className="edit-labels-and-forms">
           <form className="edit-forms" onSubmit={handleSubmit}>

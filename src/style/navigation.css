@@ -25,6 +25,8 @@
   font-size: var(--fs-l);
   text-decoration: none;
   border: solid;
+  border-color: black;
+  border-width: 3px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
   font-family: "Herculanum";
 }

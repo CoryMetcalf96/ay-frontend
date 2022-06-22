@@ -27,6 +27,8 @@
     background-color: var(--brown-red);
     color: white;
     font-family: "Herculanum";
+    border: solid;
+    border-color: black;
 }
 
 .footer > a {

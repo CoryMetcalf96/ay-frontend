@@ -16,35 +16,263 @@
     box-sizing: border-box;
 }
 
-.person {
-    margin-top: 25px;
-    margin-bottom: 25px;
+.air-person {
     display: flex;
     justify-content: center;
+    color: white;
 }
 
-.name-and-photo {
+.air-name-and-photo {
+    margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 20px 0px 0px 20px;
     border: solid;
     border-right: none;
     border-width: 8px;
     border-color: var(--brown-red);
-    background-color: var(--orange);
+    background-image: url('../images/airBG.png');
     text-align: center;
     padding: 10px 30px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: var(--brown-red);
 }
 
-.personal-information {
+.air-personal-information {
+    margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 0px 20px 20px 0px;
     border: solid;
     border-left: none;
     border-width: 8px;
     border-color: var(--brown-red);
-    background-color: var(--orange);
+    background-color: var(--brown-red);
     padding: 30px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
     max-width: 400px;
+}
+
+.fire-person {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.fire-name-and-photo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px 0px 0px 20px;
+    border: solid;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-image: url('../images/fireBG.png');
+    text-align: center;
+    padding: 10px 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: white;
+}
+
+.fire-personal-information {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 0px 20px 20px 0px;
+    border: solid;
+    border-left: none;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-color: var(--brown-red);
+    padding: 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    max-width: 400px;
+}
+
+.fire-show-edit {
+    background-color: rgb(140, 22, 46);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.fire-show-delete {
+    justify-content: center;
+    background-color: rgb(140, 22, 46);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    padding: 8px;
+}
+
+.water-person {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.water-name-and-photo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px 0px 0px 20px;
+    border: solid;
+    border-right: none;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-image: url('../images/waterBGdark.png');
+    text-align: center;
+    padding: 10px 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: white;
+}
+
+.water-personal-information {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 0px 20px 20px 0px;
+    border: solid;
+    border-left: none;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-color: var(--brown-red);
+    padding: 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    max-width: 400px;
+}
+
+.water-show-edit {
+    background-color: rgb(16, 57, 102);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.water-show-delete {
+    justify-content: center;
+    background-color: rgb(16, 57, 102);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    padding: 8px;
+}
+
+.earth-person {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.earth-name-and-photo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px 0px 0px 20px;
+    border: solid;
+    border-right: none;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-image: url('../images/earthBG.png');
+    text-align: center;
+    padding: 10px 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: white;
+}
+
+.earth-personal-information {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 0px 20px 20px 0px;
+    border: solid;
+    border-left: none;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-color: var(--brown-red);
+    padding: 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    max-width: 400px;
+}
+
+.earth-show-edit {
+    background-color: rgb(24, 91, 52);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.earth-show-delete {
+    justify-content: center;
+    background-color: rgb(24, 91, 52);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    padding: 8px;
+}
+
+.instructor-person {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.instructor-name-and-photo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px 0px 0px 20px;
+    border: solid;
+    border-right: none;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-image: url('../images/landing.png');
+    background-size: contain;
+    text-align: center;
+    padding: 10px 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    color: white;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px var(--brown-red);
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+}
+
+.instructor-personal-information {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 0px 20px 20px 0px;
+    border: solid;
+    border-left: none;
+    border-width: 8px;
+    border-color: var(--brown-red);
+    background-color: var(--brown-red);
+    padding: 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    max-width: 400px;
+}
+
+.instructor-show-edit {
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.instructor-show-delete {
+    justify-content: center;
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--fs-m);
+    padding: 8px;
 }
 
 .show-name {
@@ -61,7 +289,9 @@
     box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
 }
 
-.show-linkedin, .show-github, .show-instagram {
+.show-linkedin,
+.show-github,
+.show-instagram {
     width: 50px;
     margin-right: 10px;
     border-radius: 8px;
@@ -71,11 +301,11 @@
 .show-portfolio {
     font-size: var(--fs-xl);
     text-align: center;
-    color: black;
+    color: white;
 }
 
-.show-edit {
-    background-color: var(--brown-red);
+.air-show-edit {
+    background-color: var(--orange);
     border: none;
     color: white;
     border-radius: 5px;
@@ -84,9 +314,9 @@
     padding: 8px;
 }
 
-.show-delete {
+.air-show-delete {
     justify-content: center;
-    background-color: var(--brown-red);
+    background-color: var(--orange);
     border: none;
     color: white;
     border-radius: 5px;
@@ -95,21 +325,23 @@
 }
 
 @media only screen and (max-width: 850px) {
-    .person {
+    .air-person {
         flex-direction: column;
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .name-and-photo {
+    .air-name-and-photo {
         border-radius: 20px 20px 0px 0px;
         border-color: var(--brown-red);
         border-right: solid;
         border-bottom: none;
         border-width: 5px;
+        margin-bottom: 0px;
     }
-    
-    .personal-information {
+
+    .air-personal-information {
+        margin-top: 0;
         border-radius: 0px 0px 20px 20px;
         border: solid;
         border-color: var(--brown-red);
@@ -117,4 +349,104 @@
         border-width: 5px;
         max-width: 850px;
     }
-  }
+
+    .fire-person {
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .fire-name-and-photo {
+        border-radius: 20px 20px 0px 0px;
+        border-right: solid;
+        border-color: var(--brown-red);
+        border-bottom: none;
+        border-width: 5px;
+        margin-bottom: 0px;
+    }
+
+    .fire-personal-information {
+        margin-top: 0;
+        border-radius: 0px 0px 20px 20px;
+        border: solid;
+        border-color: var(--brown-red);
+        border-top: none;
+        border-width: 5px;
+        max-width: 850px;
+    }
+
+    .water-person {
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .water-name-and-photo {
+        border-radius: 20px 20px 0px 0px;
+        border-right: solid;
+        border-color: var(--brown-red);
+        border-bottom: none;
+        border-width: 5px;
+        margin-bottom: 0px;
+    }
+
+    .water-personal-information {
+        margin-top: 0;
+        border-radius: 0px 0px 20px 20px;
+        border: solid;
+        border-color: var(--brown-red);
+        border-top: none;
+        border-width: 5px;
+        max-width: 850px;
+    }
+
+    .earth-person {
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .earth-name-and-photo {
+        border-radius: 20px 20px 0px 0px;
+        border-right: solid;
+        border-color: var(--brown-red);
+        border-bottom: none;
+        border-width: 5px;
+        margin-bottom: 0px;
+    }
+
+    .earth-personal-information {
+        margin-top: 0;
+        border-radius: 0px 0px 20px 20px;
+        border: solid;
+        border-color: var(--brown-red);
+        border-top: none;
+        border-width: 5px;
+        max-width: 850px;
+    }
+
+    .instructor-person {
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .instructor-name-and-photo {
+        border-radius: 20px 20px 0px 0px;
+        border-right: solid;
+        border-color: var(--brown-red);
+        border-bottom: none;
+        border-width: 5px;
+        margin-bottom: 0px;
+    }
+
+    .instructor-personal-information {
+        margin-top: 0;
+        border-radius: 0px 0px 20px 20px;
+        border: solid;
+        border-color: var(--brown-red);
+        border-top: none;
+        border-width: 5px;
+        max-width: 850px;
+    }
+}

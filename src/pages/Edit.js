@@ -22,7 +22,7 @@ function Edit(props) {
 
   return (
     <div className="edit-page">
-      {!props.user && <p>Please log in to access this function</p>}
+      {!props.user && <p className="error-message">Please log in to access this function.</p>}
       {props.user && (
         <div className="edit-labels-and-forms">
           <form className="edit-forms" onSubmit={handleSubmit}>
