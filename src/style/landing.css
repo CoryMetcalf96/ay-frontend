@@ -33,8 +33,14 @@
   border-color: var(--brown-red);
   background-color: var(--orange);
   font-size: larger;
+  color: g
 }
 
 .landing-quote {
   font-family: cursive;
+}
+
+.landing-date {
+  margin-top: -20px;
+  margin-bottom: 40px;
 }
