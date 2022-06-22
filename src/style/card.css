@@ -44,6 +44,7 @@
 
 .card > a {
     color: var(--brown-red);
+    font-family: "Herculanum";
 }
 
 .mainindex-pfp {

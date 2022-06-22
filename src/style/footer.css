@@ -26,6 +26,7 @@
     margin: 0 auto;
     background-color: var(--brown-red);
     color: white;
+    font-family: "Herculanum";
 }
 
 .footer > a {
