@@ -22,11 +22,12 @@ function Edit(props) {
 
   return (
     <div className="edit-page">
-      {!props.user && <p>please log in to access this function</p>}
+      {!props.user && <p>Please log in to access this function</p>}
       {props.user && (
         <div className="edit-labels-and-forms">
           <form className="edit-forms" onSubmit={handleSubmit}>
             <div className="edit-column-1">
+              <br />
               Full Name: <br />
               <input
                 className="edit-forms"
@@ -73,6 +74,8 @@ function Edit(props) {
                 onChange={handleChange}
               />
               <br />
+            </div>
+            <div className="edit-column-2">
               <br />
               Instagram URL:
               <br />
@@ -121,6 +124,8 @@ function Edit(props) {
                 onChange={handleChange}
               />
               <br />
+            </div>
+            <div className="edit-column-3">
               <br />
               Avatar Nation:
               <br />
@@ -134,10 +139,10 @@ function Edit(props) {
                 <option value="Earth">Earth</option>
                 <option value="Water">Water</option>
                 <option value="Fire">Fire</option>
+                <option value="Instructor">Instructor</option>
               </select>
-            </div>
-            <div className="edit-column-1">
-            <br />
+              <br />
+              <br />
               Steam Username:
               <br />
               <input
@@ -173,6 +178,8 @@ function Edit(props) {
                 onChange={handleChange}
               />
               <br />
+            </div>
+            <div className="edit-column-2">
               <br />
               Nintendo Username:
               <br />
@@ -222,7 +229,8 @@ function Edit(props) {
               />
               <br />
               <br />
-              <input type="submit" value="Update Profile" />
+              <input className="edit-submit-btn" type="submit" value="Update Profile" />
+              <br />
             </div>
           </form>
         </div>
