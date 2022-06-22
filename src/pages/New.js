@@ -1,3 +1,4 @@
+// Imports
 import { useHistory } from "react-router-dom";
 import { useState } from "react";
 
@@ -35,10 +36,10 @@ function New(props) {
     redirect();
   };
 
+  // Return function on page-load
   return (
     <div className="edit-page">
-      {/* <h1>This is where we add a new person</h1>
-      <h3>create form lives here</h3> */}
+      {/* Check to see if user is logged in. If not, throw an error */}
       {!props.user && <p className="error-message">Please log in to access this function.</p>}
       {props.user && (
         <div className="edit-labels-and-forms">

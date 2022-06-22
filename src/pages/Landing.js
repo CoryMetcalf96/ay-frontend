@@ -1,6 +1,9 @@
+// Landing page / home page -> default for a non-user
+
 function Landing(props) {
   return (
     <div className="main-landing">
+      {/* Cohort name and quote */}
       <div className="landing">
         <div className="landing-text">
           <h2 className="landing-name">SEIR "Avatar"</h2>
@@ -12,6 +15,7 @@ function Landing(props) {
           better place.” —Iroh, Episode 2.20 “The Crossroads of Destiny”
         </h4>
       </div>
+      {/* Welcome statement */}
       <div className="landing-welcome">
         <h4>
           {" "}
