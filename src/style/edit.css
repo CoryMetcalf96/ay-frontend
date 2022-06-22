@@ -17,6 +17,11 @@
     background-image: url("/src/images/defaultBG.png");
 }
 
+.error-message {
+    font-size: var(--fs-l);
+    color: var(--brown-red);
+}
+
 .edit-page {
     background-color: var(--orange);
     margin: 0 auto;

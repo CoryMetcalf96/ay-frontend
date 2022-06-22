@@ -18,30 +18,45 @@
 
 @font-face {
     font-family: 'Herculanum';
-    src:  url("Herculanum-Regular.ttf");
+    src: url("Herculanum-Regular.ttf");
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    background-image: url("/src/images/yearbooknations.png") ;
-    background-size: 25vh ;
+    background-image: url("/src/images/yearbooknations.png");
+    background-size: 25vh;
     background-repeat: no-repeat;
     height: 8rem;
     text-align: center;
     justify-content: center;
-    color: black;
+    color: white;
     margin: 10px;
     font-family: "Herculanum";
-   
+
 }
 
 .avatar-yearbook {
-   padding-top: 5px;
-    font-size: var(--fs-xl);
+    padding-top: 5px;
+    font-size: 3rem;
+    text-shadow: 2px 2px var(--brown-red);
+    margin-top: -5px;
 }
 
 .stay-connected {
     font-size: var(--fs-l);
     margin-top: -20px;
+    text-shadow: 2px 2px var(--brown-red);
+}
+
+@media only screen and (max-width: 850px) {
+    .header {
+        background-position: center;
+        margin-top: 125px;
+    }
+
+    .avatar-yearbook {
+        margin-top: -225px;
+    }
+    
 }
