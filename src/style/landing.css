@@ -2,36 +2,39 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("https://wallpapercave.com/wp/wp3888653.png") ;
-  background-size: contain;
+  background-image: url("/src/images/landing.png");
+  
+  background-size: 100%;
   text-align: center;
   padding: 10px;
   margin: 10px;
   width: 80%px;
   height: 500px;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
   color: white;
   border: solid;
   border-radius: 10px;
   border-color: var(--brown-red);
   background-color: var(--orange);
-  font-size: larger;
-
+  font-size:x-large;
+  color:black
 }
 
 .landing-welcome {
-
   text-align: center;
   padding: 10px;
   margin: 10px;
   width: 80%px;
   height: 100px;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
   color: white;
   border: solid;
   border-radius: 10px;
   border-color: var(--brown-red);
   background-color: var(--orange);
   font-size: larger;
+}
 
+.landing-quote {
+  font-family: cursive;
 }
