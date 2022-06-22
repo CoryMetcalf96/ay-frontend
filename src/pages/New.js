@@ -152,6 +152,7 @@ function New(props) {
                 name="nation"
                 onChange={handleChange}
               >
+                <option value="Unknown">Choose Your Nation</option>
                 <option value="Air">Air</option>
                 <option value="Earth">Earth</option>
                 <option value="Water">Water</option>
@@ -198,7 +199,7 @@ function New(props) {
             </div>
             <div className="edit-column-2">
               <br />
-              Nintendo Username:
+              Nintendo Friend Code:
               <br />
               <input
                 className="edit-forms"

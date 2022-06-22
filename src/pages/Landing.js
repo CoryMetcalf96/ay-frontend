@@ -1,9 +1,8 @@
 function Landing(props) {
   return (<div className="main-landing">
     <div className="landing">
-      <div>
-  <h2 className="landing-name">SEIR "Avatar"</h2>
-  <h3 className="landing-date">April 26 - July 20, 2022 Cohort</h3></div>
+  <h2 className="landing-text">SEIR Avatar</h2>
+  <h3 className="landing-text">April 25 - July 20, 2022 Cohort</h3>
   <h4 className="landing-quote">“Sometimes life is like this tunnel. You can’t always see the light at the end of the tunnel, but if you keep moving, you will come to a better place.” —Iroh, Episode 2.20 “The Crossroads of Destiny”</h4>
   </div>
   <div className="landing-welcome">
