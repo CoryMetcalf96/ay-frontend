@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { login, logout } from "../services/firebase";
 
 function Navigation(props) {
+  const logo = "https://i.imgur.com/H6vWti0.png"
+
   const photoStyles = {
     borderRadius: '50%',
     height: '2.5rem',

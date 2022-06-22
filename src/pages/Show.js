@@ -4,7 +4,8 @@ function Show(props) {
   const id = props.match.params.id;
   const people = props.people;
   const person = people.find((p) => p._id === id);
-  const anonymousPicture = "https://cdn.vox-cdn.com/thumbor/8eRpMBfVFeMnzzTz95UZQnnqqtE=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/20103707/Screen_Shot_2020_07_21_at_9.38.25_AM.png"
+  const anonymousPicture = "https://i.imgur.com/T3KsC9S.png"
+
 
   const removePerson = () => {
     props.deletePeople(person._id);

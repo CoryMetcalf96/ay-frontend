@@ -33,6 +33,11 @@
   text-decoration: none;
 }
 
+.navigation-logo {
+  width: 100px;
+  padding-top: 10px;
+}
+
 .log {
   list-style: none;
   align-items: center;
@@ -65,5 +70,10 @@
 
   .navigation > a:visited, .navigation > a:link, .navigation > a:hover, .navigation > a:active {
     padding: 5px;
+  }
+
+  .navigation-logo {
+    width: 75px;
+    padding-top: 10px;
   }
 }

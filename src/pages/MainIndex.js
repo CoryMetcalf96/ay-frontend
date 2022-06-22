@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 function MainIndex(props) {
-  const anonymousPicture = "https://cdn.vox-cdn.com/thumbor/8eRpMBfVFeMnzzTz95UZQnnqqtE=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/20103707/Screen_Shot_2020_07_21_at_9.38.25_AM.png"
+  const anonymousPicture = "https://i.imgur.com/T3KsC9S.png"
 
   const loaded = () => {
     return (
