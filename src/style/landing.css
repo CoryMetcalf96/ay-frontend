@@ -1,9 +1,26 @@
+/* Color Variables */
+:root {
+  --orange: #dc8c24;
+  --yellow: #fcdc7b;
+  --brown-red: #5c3026;
+  --light-blue: #7094b7;
+  --light-grey: #c6b3b0;
+  --black: #3c3c44;
+
+  --fs-xl: 2.5rem;
+  --fs-l: 1.5rem;
+  --fs-m: 1.25rem;
+  --fs-s: 1rem;
+  --fs-xs: .75rem;
+
+  box-sizing: border-box;
+}
+
 .landing {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-image: url("/src/images/landing.png");
-  
   background-size: 100%;
   text-align: center;
   padding: 10px;
@@ -13,11 +30,13 @@
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
   color: white;
   border: solid;
+  border-width: 4px;
   border-radius: 10px;
   border-color: var(--brown-red);
   background-color: var(--orange);
-  font-size:x-large;
-  color:black
+  font-size: x-large;
+  color: white;
+  text-shadow: 1px 1px black;
 }
 
 .landing-welcome {
@@ -35,8 +54,17 @@
   font-size: larger;
 }
 
+.landing-text {
+  background-color: rgba(40, 30, 25, 0.5);
+  border-radius: 20px;
+  width: auto;
+}
+
 .landing-quote {
+  font-size: var(--fs-l);
   font-family: cursive;
+  background-color: rgba(40, 30, 25, 0.5);
+  border-radius: 20px;
 }
 
 .landing-date {

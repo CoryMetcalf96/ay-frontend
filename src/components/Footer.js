@@ -1,7 +1,7 @@
 function Footer (props) {
     return (
         <div className="footer">
-            <a className="contact-btn" href="/contact">Contact Us</a>
+            <h4>Founded in 2022</h4>
         </div>
     )
 }

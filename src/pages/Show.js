@@ -1,19 +1,23 @@
+// Imports
 import { Link } from "react-router-dom";
+const anonymousPicture = "https://i.imgur.com/T3KsC9S.png";
 
 function Show(props) {
+  // Pull ID from URL to show correct user profile
   const id = props.match.params.id;
   const people = props.people;
   const person = people.find((p) => p._id === id);
-  const anonymousPicture = "https://i.imgur.com/T3KsC9S.png"
 
-
+  // Function for deleting a profile
   const removePerson = () => {
     props.deletePeople(person._id);
     props.history.push("/mainindex");
   }
 
+  // Return function on page-load
   return (
     <div>
+      {/* Loade profile based on air nation or default nation */}
       {(person.nation == "Air") || (person.nation == "Default") ?
         <div className="air-person">
           <div className="air-name-and-photo">
@@ -117,6 +121,8 @@ function Show(props) {
           </div>
         </div>
         : null}
+
+      {/* Load profile based on fire nation styling */}
       {(person.nation == "Fire") ?
         <div className="fire-person">
           <div className="fire-name-and-photo">
@@ -220,6 +226,8 @@ function Show(props) {
           </div>
         </div>
         : null}
+
+      {/* Load nation based on water nation styling */}
       {(person.nation == "Water") ?
         <div className="water-person">
           <div className="water-name-and-photo">
@@ -323,6 +331,8 @@ function Show(props) {
           </div>
         </div>
         : null}
+
+      {/* Load nation based on earth nation styling */}
       {(person.nation == "Earth") ?
         <div className="earth-person">
           <div className="earth-name-and-photo">
@@ -427,6 +437,7 @@ function Show(props) {
         </div>
         : null}
 
+      {/* Load nation based on instructor styling */}
       {(person.nation == "Instructor") ?
         <div className="instructor-person">
           <div className="instructor-name-and-photo">

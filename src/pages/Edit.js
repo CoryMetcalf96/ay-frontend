@@ -1,31 +1,42 @@
+// Imports
 import { useHistory } from "react-router-dom";
 import { useState } from "react";
 
+// Main Component
 function Edit(props) {
+  // Assign history so we can go back
   let history = useHistory();
 
+  // Find the matching profile using the ID in the URL
   const id = props.match.params.id;
   const people = props.people;
   const person = people.find((p) => p._id === id);
 
+  // Set-up state
   const [editForm, setEditForm] = useState(person);
 
+  // Function for updated information
   const handleChange = (event) => {
     setEditForm({ ...editForm, [event.target.name]: event.target.value });
   };
 
+  // Function for when the form is submitted
   const handleSubmit = (event) => {
     event.preventDefault();
     props.updatePeople(editForm, person._id);
     history.goBack();
   };
 
+  // Return function
   return (
     <div className="edit-page">
+      {/* Check to see if the user is logged in. If not, throw an error message */}
       {!props.user && <p className="error-message">Please log in to access this function.</p>}
       {props.user && (
         <div className="edit-labels-and-forms">
+          {/* Form for updating the profile */}
           <form className="edit-forms" onSubmit={handleSubmit}>
+            {/* Set-up column divs for styling purposes */}
             <div className="edit-column-1">
               <br />
               Full Name: <br />
@@ -129,6 +140,7 @@ function Edit(props) {
               <br />
               Avatar Nation:
               <br />
+              {/* Dropdown menu for nation to keep styling based on nation consistent */}
               <select
                 className="edit-forms"
                 value={editForm.nation}

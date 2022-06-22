@@ -14,9 +14,10 @@
     --fs-xs: .75rem;
 
     box-sizing: border-box;
-    background-image: url("/src/images/defaultBG.png");
+    background-image: url("/src/images/mirroredDefaultBG.png");
 }
 
+/* Error message styling */
 .error-message {
     font-size: var(--fs-l);
     color: var(--brown-red);

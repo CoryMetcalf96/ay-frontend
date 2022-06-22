@@ -1,11 +1,14 @@
+// Imports
 import { Link } from "react-router-dom"
+const anonymousPicture = "https://i.imgur.com/T3KsC9S.png"
 
+// Return function on page load
 function MainIndex(props) {
-  const anonymousPicture = "https://i.imgur.com/T3KsC9S.png"
-
+  // Function to return once the index is loaded
   const loaded = () => {
     return (
       <div className="cards">
+        {/* Map through database, person-by-person */}
         {props.people.map((person) => (
           <div key={person._id}>
             {/* Check to see if the person is air nation to apply styling */}
@@ -64,7 +67,7 @@ function MainIndex(props) {
                 }
               </div>
               : null}
-                
+
             {/* Check to see if the person is earth nation to apply styling */}
             {(person.nation == "Earth") ?
               <div className="earth-card">
@@ -84,7 +87,7 @@ function MainIndex(props) {
               </div>
               : null}
 
-              {/* Check to see if the person is an instructor to apply styling */}
+            {/* Check to see if the person is an instructor to apply styling */}
             {(person.nation == "Instructor") ?
               <div className="instructor-card">
                 <Link to={`/show/${person._id}`}>
@@ -107,9 +110,12 @@ function MainIndex(props) {
         }</div>);
   };
 
+  // Function to return until index is fully loaded from the database
   const loading = () => {
     return <h1>Loading...</h1>;
   };
+
+  // Return database when ready
   return props.people ? loaded() : loading();
 }
 
