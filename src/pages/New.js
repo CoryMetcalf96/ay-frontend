@@ -88,7 +88,7 @@ function New(props) {
                 className="edit-forms"
                 type="text"
                 value={newForm.github}
-                name="guthub"
+                name="github"
                 placeholder="Github URL"
                 onChange={handleChange}
               />
@@ -139,7 +139,7 @@ function New(props) {
                 type="text"
                 value={newForm.quote}
                 name="quote"
-                placeholder="quote"
+                placeholder="Quote"
                 onChange={handleChange}
               />
               <br />
@@ -209,7 +209,7 @@ function New(props) {
                 type="text"
                 value={newForm.nintendo}
                 name="nintendo"
-                placeholder="Nintendo Username"
+                placeholder="Nintendo Friend Code"
                 onChange={handleChange}
               />
               <br />

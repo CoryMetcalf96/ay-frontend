@@ -450,3 +450,17 @@
         max-width: 850px;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .show-picture {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .show-picture {
+        width: 150px;
+        height: 150px;
+    }
+}
