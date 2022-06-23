@@ -4,6 +4,7 @@ import "firebase/auth";
 const config = {
   apiKey: "AIzaSyCx7bqnb6IFqy5c_XKQMF73lxHiFf7_jO8",
   authDomain: "avataryearbook.firebaseapp.com",
+  authDomain: "https://avatar-yearbook.netlify.app/",
   projectId: "avataryearbook",
   storageBucket: "avataryearbook.appspot.com",
   messagingSenderId: "168361785024",
