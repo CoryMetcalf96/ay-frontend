@@ -16,6 +16,21 @@
     box-sizing: border-box;
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.show-page {
+    animation: fadeInAnimation ease .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 .air-person {
     display: flex;
     justify-content: center;

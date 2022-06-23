@@ -16,7 +16,19 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 .landing {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   display: flex;
   flex-direction: column;
   justify-content: center;
