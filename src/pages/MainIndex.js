@@ -12,7 +12,7 @@ function MainIndex(props) {
         {props.people.map((person) => (
           <div key={person._id}>
             {/* Check to see if the person is air nation to apply styling */}
-            {(person.nation == "Air") || (person.nation == "Default") ?
+            {(person.nation == "Air") || (person.nation == "Unknown") ?
               <div className="air-card">
                 <Link to={`/show/${person._id}`}>
                   {

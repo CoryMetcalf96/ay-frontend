@@ -71,3 +71,13 @@
   margin-top: -20px;
   margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 550px) {
+  .landing-text, .landing-quote {
+    font-size: 1.25rem;
+  }
+
+  .landing-welcome {
+    font-size: .8rem;
+  }
+}

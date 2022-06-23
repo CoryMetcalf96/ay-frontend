@@ -18,7 +18,7 @@ function Show(props) {
   return (
     <div>
       {/* Loade profile based on air nation or default nation */}
-      {(person.nation == "Air") || (person.nation == "Default") ?
+      {(person.nation == "Air") || (person.nation == "Unknown") ?
         <div className="air-person">
           <div className="air-name-and-photo">
             <h1 className="show-name"> {person.name} </h1>

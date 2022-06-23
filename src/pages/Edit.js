@@ -80,7 +80,7 @@ function Edit(props) {
                 className="edit-forms"
                 type="text"
                 value={editForm.github}
-                name="guthub"
+                name="github"
                 placeholder="Github URL"
                 onChange={handleChange}
               />
@@ -131,7 +131,7 @@ function Edit(props) {
                 type="text"
                 value={editForm.quote}
                 name="quote"
-                placeholder="quote"
+                placeholder="Quote"
                 onChange={handleChange}
               />
               <br />
@@ -201,7 +201,7 @@ function Edit(props) {
                 type="text"
                 value={editForm.nintendo}
                 name="nintendo"
-                placeholder="Nintendo Username"
+                placeholder="Nintendo Friend Code"
                 onChange={handleChange}
               />
               <br />
