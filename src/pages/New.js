@@ -54,6 +54,7 @@ function New(props) {
                 name="name"
                 placeholder="Full Name"
                 onChange={handleChange}
+                required
               />
               <br />
               <br />
@@ -152,6 +153,7 @@ function New(props) {
                 value={newForm.nation}
                 name="nation"
                 onChange={handleChange}
+                required
               >
                 <option value="Unknown">Choose Your Nation</option>
                 <option value="Air">Air</option>

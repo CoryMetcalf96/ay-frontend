@@ -25,10 +25,12 @@
     text-align: center;
     margin: 0 auto;
     background-color: var(--brown-red);
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: smaller;
     font-family: "Herculanum";
     border: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
 }
 
 .footer > a {
