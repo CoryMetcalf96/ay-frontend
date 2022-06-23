@@ -16,7 +16,7 @@ function Show(props) {
 
   // Return function on page-load
   return (
-    <div>
+    <div className="show-page">
       {/* Loade profile based on air nation or default nation */}
       {(person.nation == "Air") || (person.nation == "Unknown") ?
         <div className="air-person">

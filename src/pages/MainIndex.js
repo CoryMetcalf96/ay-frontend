@@ -8,8 +8,9 @@ function MainIndex(props) {
   const loaded = () => {
     return (
       <div className="cards">
-        {/* Map through database, person-by-person */}
-        {props.people.map((person) => (
+        {/* Map through database, person-by-person, and sort by first name */}
+        {props.people.sort((a, b) => (a.name > b.name) ? 1 : -1).
+map((person) => (
           <div key={person._id}>
             {/* Check to see if the person is air nation to apply styling */}
             {(person.nation == "Air") || (person.nation == "Unknown") ?

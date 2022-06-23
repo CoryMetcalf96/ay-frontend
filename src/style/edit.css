@@ -17,13 +17,28 @@
     background-image: url("/src/images/repeatBG.png");
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Error message styling */
 .error-message {
+    animation: fadeInAnimation ease .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     font-size: var(--fs-l);
-    color: var(--brown-red);
+    color: var(--brown-red);   
 }
 
 .edit-page {
+    animation: fadeInAnimation ease .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     background-color: var(--orange);
     margin: 0 auto;
     margin-bottom: 15px;

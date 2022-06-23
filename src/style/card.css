@@ -16,15 +16,20 @@
     box-sizing: border-box;
 }
 
-/* Entire card grid */
-.card-grid {
-    display: flex;
-    justify-content: space-around;
-    background-color:rgb(229, 218, 204)
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Individual cards */
 .cards {
+    animation: fadeInAnimation ease .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
