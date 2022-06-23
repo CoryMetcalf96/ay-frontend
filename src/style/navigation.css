@@ -23,6 +23,7 @@
   background-color: var(--brown-red);
   color: white;
   font-size: var(--fs-l);
+  font-weight: bold;
   text-decoration: none;
   border: solid;
   border-color: black;

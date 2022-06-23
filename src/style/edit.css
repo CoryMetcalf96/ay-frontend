@@ -14,7 +14,7 @@
     --fs-xs: .75rem;
 
     box-sizing: border-box;
-    background-image: url("/src/images/mirroredDefaultBG.png");
+    background-image: url("/src/images/repeatBG.png");
 }
 
 /* Error message styling */
