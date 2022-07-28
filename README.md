@@ -1,6 +1,8 @@
 ### Avatar Yearbook
 
-The ‘Avatar Yearbook’ - a one-stop-shop to look up members of the SEIR "Avatar"  cohort. No need to jump through 3 applications for someone’s LinkedIn or GitHub profile. Instead, stop over at the ‘Avatar Yearbook’ where you can look through our cohort to find anything and everything we’ve chosen to share. From social media, to gaming links, to book suggestions - we’re looking to get our cohort in one place to stay connected, indefinitely
+- Deployment Link: https://avatar-yearbook.netlify.app/
+
+The ‘Avatar Yearbook’ - a one-stop-shop to look up members of the SEIR "Avatar" cohort. No need to jump through 3 different applications for someone’s LinkedIn or GitHub profile. Instead, stop over at the ‘Avatar Yearbook’ where you can look through our cohort to find anything and everything we’ve chosen to share. From social media, to gaming links, to book suggestions - we’re looking to get our cohort in one place to stay connected, indefinitely
 
 ---
 
