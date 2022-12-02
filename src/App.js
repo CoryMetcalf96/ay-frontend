@@ -35,7 +35,7 @@ function App() {
 
   // Set-up state
   const [people, setPeople] = useState(null);
-  const URL = "https://avatar-yearbook-backend.herokuapp.com/";
+  const URL = "https://avatar-yearbook-backend.up.railway.app/";
 
   // Function for retrieving people
   const getPeople = async () => {
